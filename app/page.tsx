@@ -1,6 +1,10 @@
-import Image from "next/image";
+"use client";
 import Chat from "./components/Chat";
 
 export default function Home() {
-  return <Chat />;
+  return (
+    <Chat>
+      <Chat.Window />
+    </Chat>
+  );
 }
